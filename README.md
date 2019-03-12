@@ -26,5 +26,5 @@ glimpse of data and its univaariate stats is in the file("EDA on cust and LMS da
 2. Cust data is insufficent to map all the customer present in LMS data.
 3. So I clustered them and idea is to replacing missing value of one col is precise as well as less time consuming as compared to a table.
 
-
+Further details will be updated soon, Codes are linked.
 
