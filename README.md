@@ -41,8 +41,12 @@ target Var.
 
 # Key points after EDA
 1. Train data is skewed with only 9% event has happened
-2. Cust data is insufficent to map all the customer present in LMS data.
-3. So I clustered them and idea is to replacing missing value of one col is precise as well as less time consuming as compared to a table.
+2. EDA on Cust data and LMS data reveals the pattern in LMS and Cust data, In Other words the corelation between Customer's Income and 
+   Loan Taken is significant. And Similarly Customer's Age and Qualification does have similar corelation with Loan Amount.
+   Takeaway from this EDA is Customer Profiling for Loan is going to add other cols in LMS data.
+   Challenge 1: Cust Table has only 10000 cust and LMS has 33K unique Cust ID so Mapping them with Cust ID is going 23K* No of New          Variables will be added in LMS data.
+   Aprroach: Since there is Corelation between these two tables so used Cust segmentation and created their Profile, there were 10          distinct cust type is found with Silhoute Coeff is .47, instead of merging entire cust table merged Customer cluster information to      LMS data. Using Random Forest/ KNN  /Missranger, missing values were imputed.
+   
+3. 
 
-Further details will be updated soon, Codes are linked.
 
